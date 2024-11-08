@@ -1,0 +1,11 @@
+{
+	"animations": {
+		"loop": {
+			"group": {
+				"outer": {
+					"rotation": "time*20"
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+	"animations": {
+		"loop": {
+			"group": {
+				"root": {
+					"scale": [1, "1 + Math.sin(4*time) * 0.05"]
+				},
+                "flower": {
+                    "post": ["Math.sin(4*time) * 0.1", "Math.cos(4*time) * 0.1"],
+                    "rotation": "Math.sin(2*time) * -7.5"
+                }
+			}
+		},
+		"produce": {
+			"animation_length": 1,
+            "lerp_mode": "catmullrom",
+			"group": {
+				"root": {
+                    "0": {
+                        "scale": [0, 0]
+                    },
+					"0.25": {
+                        "scale": [0, -0.2]
+                    },
+                    "0.5": {
+                        "scale": [0, 0.25]
+                    },
+					"0.75": {
+                        "scale": [0, -0.2]
+                    },
+                    "1": {
+                        "scale": [0, 0]
+                    }
+				}
+			}
+		}
+	}
+}
